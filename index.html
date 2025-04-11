@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Traceability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Traceability</h1>
+        <div id="product-form">
+            <h2>Create Product</h2>
+            <input type="text" id="manufacturer" placeholder="Manufacturer">
+            <input type="number" id="lotNumber" placeholder="Lot Number">
+            <input type="text" id="productName" placeholder="Product Name">
+            <input type="text" id="lotId" placeholder="Lot ID">
+            <input type="number" id="totalProducts" placeholder="Total Products">
+            <input type="number" id="purchaseDate" placeholder="Purchase Date (timestamp)">
+            <button onclick="createProduct()">Create Product</button>
+        </div>
+        <div id="product-info">
+            <h2>Product Information</h2>
+            <input type="number" id="productId" placeholder="Product ID">
+            <button onclick="getProduct()">Get Product</button>
+            <div id="product-details"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
